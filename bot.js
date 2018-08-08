@@ -104,7 +104,7 @@ async function play(){
             await sleep(speed);
         }
         await sleep(speed);
-        $(".game-button-slot").trigger("click");
+        $(".tickets > .button > .game-button").trigger("click");
         await sleep(speed);
         $(".pulse").trigger("click");
         await sleep(speed);
