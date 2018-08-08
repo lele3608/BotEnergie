@@ -103,12 +103,11 @@ async function play(){
             $("#next-question").trigger("click");
             await sleep(speed);
         }
-        await sleep(speed);
-        $(".tickets > .button > .game-button").trigger("click");
-        await sleep(speed);
+        $(".game-button-slot").trigger("click").length;
         $(".pulse").trigger("click");
-        await sleep(speed);
-        $(".game-button").trigger("click");
+        if($(".game-button").length == 1){
+            $(".game-button").trigger("click");
+        }
         await sleep(speed);
     }
 }
