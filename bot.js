@@ -149,7 +149,7 @@ function sleep(ms) {
 
 async function play(){
     while(!pause){
-        while($("#next-question").length > 0){
+        while($("#next-question").length > 0 && !pause){
             selectRightAnswer();
             await sleep(speed);
             $("#next-question").trigger("click");
