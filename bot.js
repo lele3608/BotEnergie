@@ -135,6 +135,12 @@ function selectRightAnswer(){
             console.log("im Radio, auf der Website und über Social Media");
         }
     }
+    else{
+        $("input[name='type']:radio").prop("checked", true).trigger("click");
+        if(log){
+            console.log("keine Antwort vorhanden - Zufall wird gebraucht");
+        }
+    }
 }
 
 function sleep(ms) {
