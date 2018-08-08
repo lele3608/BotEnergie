@@ -136,7 +136,7 @@ function selectRightAnswer(){
         }
     }
     else{
-        $("input[name='type']:radio").prop("checked", true).trigger("click");
+        $("input:radio").prop("checked", true).trigger("click");
         if(log){
             console.log("keine Antwort vorhanden - Zufall wird gebraucht");
         }
